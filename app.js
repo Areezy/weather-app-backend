@@ -12,7 +12,11 @@ var indexRouter = require('./routes/index');
 var app = express();
 
 var corsOptions = {
-  origin: process.env.CLIENT_APP_URL,
+  origin: [
+    process.env.CLIENT_APP_URL_1,
+    process.env.CLIENT_APP_URL_2,
+    process.env.CLIENT_APP_URL_3,
+  ],
 };
 
 // view engine setup
